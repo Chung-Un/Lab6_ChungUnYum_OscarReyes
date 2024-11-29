@@ -4,6 +4,7 @@
  */
 package yum_chungun_reyes_oscar_lab6;
 
+
 /**
  *
  * @author chung
@@ -300,6 +301,10 @@ public class menuPrincipal extends javax.swing.JFrame {
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
         // TODO add your handling code here:
         tabsInicio.setSelectedIndex(0);
+        Juego J = new Juego();
+        
+        J.setVisible(true);
+        //J.IniciarLabels();
     }//GEN-LAST:event_btnJugarActionPerformed
 
     private void btnRankingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRankingActionPerformed

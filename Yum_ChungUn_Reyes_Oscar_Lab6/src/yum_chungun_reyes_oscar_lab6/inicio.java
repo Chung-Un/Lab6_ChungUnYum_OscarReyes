@@ -8,7 +8,7 @@ package yum_chungun_reyes_oscar_lab6;
  *
  * @author chung
  */
-import javax.swing.JOptionPane;
+
 
 public class inicio extends javax.swing.JFrame {
 
@@ -26,6 +26,7 @@ public class inicio extends javax.swing.JFrame {
    String[][] usuarios = {{"chungun23","oscar","pato"},{"mcr10","pop12","patos"}};
    int posicionUsuario;
    boolean passwordValida;
+   menuPrincipal menuPrincipal = new menuPrincipal();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -324,7 +325,7 @@ public class inicio extends javax.swing.JFrame {
 
     private void btnSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSesionActionPerformed
         // TODO add your handling code here:
-        tabsInicio.setSelectedIndex(0);
+        tabsInicio.setSelectedIndex(0);//se muestra el panel que corresponde al boton
     }//GEN-LAST:event_btnSesionActionPerformed
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
@@ -350,12 +351,14 @@ public class inicio extends javax.swing.JFrame {
         posicionUsuario = funcionesPlayers.validarPosicion(usuarioBusqueda, usuarios);
         funcionesPlayers.validarUsuario(posicionUsuario, usuarioBusqueda);
        
-        if (posicionUsuario>-1){
+        if (posicionUsuario>-1){//si el usuario es valido, se valida la password
         funcionesPlayers.validarPassword(passwordBusqueda, posicionUsuario, usuarios);
         
-        if (passwordValida){
+        if (passwordValida){//si la password es valida se settea el player
         players player1 = new players(usuarioBusqueda,passwordBusqueda);
+        menuPrincipal.setVisible(true);
         this.dispose();}
+        
         }
         
     }//GEN-LAST:event_btnOkActionPerformed
@@ -379,7 +382,9 @@ public class inicio extends javax.swing.JFrame {
         if(passwordValida){
         players player1 = new players(usuarioBusqueda,passwordBusqueda);
         
-        this.dispose();}}
+        menuPrincipal.setVisible(true);
+        this.dispose()
+        ;}}//se hace lo mismo que el boton anterior
         
     }//GEN-LAST:event_btnOkRegistroActionPerformed
 
