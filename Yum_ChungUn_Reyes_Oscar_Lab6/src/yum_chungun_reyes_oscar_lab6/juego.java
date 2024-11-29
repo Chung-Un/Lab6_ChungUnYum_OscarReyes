@@ -14,14 +14,14 @@ public class Juego extends javax.swing.JFrame {
     
     public InformacionJuego I = new InformacionJuego();
     
-    public Juego() {
+    /*public Juego() {
         initComponents();
         
     }
 
    
     
-    /*void IniciarLabels(){
+    void IniciarLabels(){
         I.Labels[0][0] = Posicion1;
         I.Labels[0][1] = Posicion2;
         I.Labels[0][2] = Posicion3;
@@ -32,8 +32,8 @@ public class Juego extends javax.swing.JFrame {
         I.Labels[2][1] = Posicion8;
         I.Labels[2][2] = Posicion9;
       
-    }*/
-    
+    }
+    */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -189,25 +189,25 @@ public class Juego extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void EstablecerBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EstablecerBotonActionPerformed
-        int Fila, Col;
-        
-        Fila = Integer.parseInt(JOptionPane.showInputDialog("Inserte Posicion en X"));
-        
-        //Validacion
-        if(Fila > 3 || 1 > Fila) {
-            JOptionPane.showMessageDialog(null, "Ingrese coordenada en rango!");
-            Fila = Integer.parseInt(JOptionPane.showInputDialog("Inserte Posicion en X"));
-        }
-        
-        Col = Integer.parseInt(JOptionPane.showInputDialog("Inserte Posicion en Y"));
-        
-        //Validacion
-        if(Col > 3 || 1 > Col) {
-            JOptionPane.showMessageDialog(null, "Ingrese coordenada en rango!");
-            Col = Integer.parseInt(JOptionPane.showInputDialog("Inserte Posicion en Y"));
-        }
-        
-        I.setTextoBoton(Fila, Col);
+//        int Fila, Col;
+//        
+//        Fila = Integer.parseInt(JOptionPane.showInputDialog("Inserte Posicion en X"));
+//        
+//        //Validacion
+//        if(Fila > 3 || 1 > Fila) {
+//            JOptionPane.showMessageDialog(null, "Ingrese coordenada en rango!");
+//            Fila = Integer.parseInt(JOptionPane.showInputDialog("Inserte Posicion en X"));
+//        }
+//        
+//        Col = Integer.parseInt(JOptionPane.showInputDialog("Inserte Posicion en Y"));
+//        
+//        //Validacion
+//        if(Col > 3 || 1 > Col) {
+//            JOptionPane.showMessageDialog(null, "Ingrese coordenada en rango!");
+//            Col = Integer.parseInt(JOptionPane.showInputDialog("Inserte Posicion en Y"));
+//        }
+//        
+//        I.setTextoBoton(Fila, Col);
     }//GEN-LAST:event_EstablecerBotonActionPerformed
 
     /**

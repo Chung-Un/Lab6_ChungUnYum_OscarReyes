@@ -304,7 +304,7 @@ public class menuPrincipal extends javax.swing.JFrame {
         Juego J = new Juego();
         
         J.setVisible(true);
-        //J.IniciarLabels();
+//        J.IniciarLabels();
     }//GEN-LAST:event_btnJugarActionPerformed
 
     private void btnRankingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRankingActionPerformed
